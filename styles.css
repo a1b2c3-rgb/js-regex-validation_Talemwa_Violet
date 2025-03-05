@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background: white;
+    background: pink;
     padding: 20px;
     border-radius: 8px;
     width: 300px;
@@ -39,7 +39,7 @@ input {
 
 button {
     padding: 10px;
-    background: #28a745;
+    background: red;
     color: white;
     border: none;
     border-radius: 5px;
@@ -47,7 +47,7 @@ button {
 }
 
 button:hover {
-    background: #218838;
+    background: violet;
 }
 
 .error {
