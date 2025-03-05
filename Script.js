@@ -28,13 +28,13 @@ document.getElementById("validationForm").addEventListener("submit", function(ev
 
     // Phone Number Validation (Only digits, 10-15 characters)
     let phoneRegex = /^\d{10,15}$/;
-    if (!phoneRegex.test(phone) || phone === "") {
-        showError("phone", "Enter a valid phone number (10-15 digits).");
-        isValid = false;
-    } else {
-        hideError("phone");
-    }
 
+    if (!phoneRegex.test(phone) || phone.length > 15) {
+       showError("phone", "Enter a valid phone number (10-15 digits).");
+         isValid = false;
+        } else {
+              hideError("phone");
+           }
     // Password Validation (At least 8 characters, 1 uppercase, 1 lowercase, 1 number)
     let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
     if (!passwordRegex.test(password) || password === "") {
